@@ -1,0 +1,146 @@
+.contact-logo {
+    background-image: linear-gradient( 270deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+    &__inner {
+        padding: 100px 0px;
+        text-align: center;
+        &-title {
+            @include f500;
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        &-text {
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}
+
+.contact {
+    background-color: #eff1f5;
+    &__inner {
+        padding: 120px 0px;
+        &-title {
+            color: #000;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            span {
+                color: $blue;
+            }
+        }
+        &-text {
+            max-width: 680px;
+            width: 100%;
+            line-height: 30px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 60px;
+        }
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            &-box {
+                max-width: 360px;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 4px;
+                box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+                padding: 50px 63px;
+                .title-address {
+                    &::before {
+                        content: "\e833";
+                    }
+                }
+                .title-phone {
+                    &::before {
+                        content: "\e831";
+                    }
+                }
+                .title-mail {
+                    &::before {
+                        content: "\e81a";
+                    }
+                }
+                &-title {
+                    @include f500;
+                    font-size: 20px;
+                    color: #000;
+                    text-align: center;
+                    position: relative;
+                    padding-top: 100px;
+                    margin-bottom: 35px;
+                    &::before {
+                        position: absolute;
+                        font-family: 'Linearicons-Free';
+                        color: $blue;
+                        top: 0%;
+                        left: 40%;
+                        font-size: 48px;
+                    }
+                }
+                a {
+                    text-align: center;
+                    line-height: 30px;
+                    color: #555;
+                    display: block;
+                }
+            }
+        }
+        &-message {
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+            width: 100%;
+            margin-top: 50px;
+            &-title {
+                font-size: 24px;
+                color: #000;
+                text-align: center;
+                padding-top: 60px;
+                padding-bottom: 35px;
+                border-bottom: 1px solid #e8ebf0;
+            }
+            form {
+                padding: 40px 195px 60px;
+                display: flex;
+                justify-content: flex-start;
+                margin-left: -30px;
+                flex-wrap: wrap;
+                input,
+                textarea {
+                    min-width: 360px;
+                    flex-basis: calc(25% - 30px);
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                    height: 50px;
+                    border: 1px solid #e7e7e7;
+                    outline: none;
+                    padding-left: 20px;
+                    color: #9e9e9e;
+                    &::placeholder {
+                        color: #9e9e9e;
+                    }
+                }
+                textarea {
+                    min-width: 750px;
+                    height: 130px;
+                    resize: none;
+                }
+                button {
+                    background-color: $blue;
+                    color: #fff;
+                    border: none;
+                    border-radius: 25px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 170px;
+                    line-height: 50px;
+                    cursor: pointer;
+                    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}

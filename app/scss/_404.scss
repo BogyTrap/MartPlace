@@ -1,0 +1,28 @@
+.page-404 {
+    background-color: #fff;
+    &__inner {
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 100px;
+        &-img {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 50px;
+        }
+        &-text {
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 40px;
+        }
+        &-link {
+            @include f500;
+            font-size: 15px;
+            color: #fff;
+            background-color: $blue;
+            border-radius: 28px;
+            width: 190px;
+            line-height: 50px;
+        }
+    }
+}

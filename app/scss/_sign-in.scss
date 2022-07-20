@@ -1,0 +1,82 @@
+.sign {
+    background-color: #eff1f5;
+    &-inner {
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+    &-box {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        max-width: 555px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-title {
+        padding: 60px 0px 30px;
+        text-align: center;
+        border-bottom: 1px solid #e8ebf0;
+        h1 {
+            @include f400;
+            font-size: 26px;
+            color: #000;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    &-info {
+        padding: 30px 50px 60px;
+        &-title {
+            @include f500;
+            color: #000;
+            margin-bottom: 14px;
+        }
+        input {
+            width: 100%;
+            background-color: #f4f5f8;
+            border: none;
+            outline: none;
+            padding-left: 20px;
+            padding-right: 5px;
+            height: 50px;
+            color: #000;
+            margin-bottom: 30px;
+            &::placeholder {
+                color: #898f96;
+            }
+        }
+        button {
+            background-color: $blue;
+            color: #fff;
+            font-size: 15px;
+            @include f500;
+            width: 190px;
+            line-height: 50px;
+            border-radius: 25px;
+            cursor: pointer;
+            border: none;
+            margin-bottom: 40px;
+        }
+        a {
+            color: #898f96;
+            span {
+                color: $blue;
+            }
+            &+a {
+                margin-left: 20px;
+            }
+        }
+    }
+    &-remember {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        svg {
+            margin-right: 15px;
+        }
+    }
+}

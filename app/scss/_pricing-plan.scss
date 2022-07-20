@@ -1,0 +1,130 @@
+.pricing-plan_content {
+    background-color: #eff1f5;
+    &__inner {
+        padding: 120px 0px;
+        &-title {
+            color: #000;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+            span {
+                color: $blue;
+            }
+        }
+        &-text {
+            line-height: 30px;
+            margin-bottom: 60px;
+            max-width: 750px;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+        &-items {
+            display: flex;
+            justify-content: space-between;
+            &-starter {
+                border-top: 3px solid $red;
+                &-link {
+                    background-color: $red;
+                }
+            }
+            &-business {
+                border-top: 3px solid $blue;
+                &-link {
+                    background-color: $blue;
+                }
+            }
+            &-agency {
+                border-top: 3px solid $yellow;
+                &-link {
+                    background-color: $yellow;
+                }
+            }
+            &-box {
+                background-color: #fff;
+                border-radius: 4px;
+                padding: 30px;
+                box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+                max-width: 360px;
+                width: 100%;
+                &-title {
+                    font-size: 24px;
+                    @include f500;
+                    color: #000;
+                    text-align: center;
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #e8ebf0;
+                }
+                &-price {
+                    font-size: 36px;
+                    color: #000;
+                    position: relative;
+                    padding-left: 9px;
+                    max-width: 200px;
+                    width: 100%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 30px;
+                    span {
+                        color: #555;
+                        font-size: 18px;
+                    }
+                    &::before {
+                        position: absolute;
+                        content: '$';
+                        font-size: 18px;
+                        left: 0;
+                        top: 7px;
+                    }
+                }
+                ul {
+                    margin-top: 50px;
+                    margin-bottom: 40px;
+                    li {
+                        display: inline-block;
+                        padding-left: 23px;
+                        position: relative;
+                        &+li {
+                            margin-top: 23px;
+                        }
+                        span {
+                            color: #000;
+                            @include f500;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            top: 5px;
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 50%;
+                            background-color: #c5cad4;
+                        }
+                    }
+                    .question {
+                        padding-right: 31px;
+                        position: relative;
+                        &::after {
+                            right: 0;
+                            position: absolute;
+                            content: "\e87d";
+                            font-family: 'Linearicons-Free';
+                            font-size: 18px;
+                        }
+                    }
+                }
+                &-link {
+                    font-size: 18px;
+                    @include f500;
+                    color: #fff;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 50px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
